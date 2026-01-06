@@ -1,6 +1,6 @@
 package snowflakeroles
 
-import "github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+import "github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 
 var (
 	GlobalOrgAdmin = sdk.NewAccountObjectIdentifier("GLOBALORGADMIN")

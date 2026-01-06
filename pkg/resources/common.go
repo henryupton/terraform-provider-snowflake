@@ -6,14 +6,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/internal/tracking"
+	"github.com/henryupton/terraform-provider-snowflakier/internal/tracking"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/provider"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider/previewfeatures"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider/resources"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/provider"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/provider/previewfeatures"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/provider/resources"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 
 	"github.com/hashicorp/go-cty/cty"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"

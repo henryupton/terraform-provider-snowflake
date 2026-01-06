@@ -4,7 +4,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 )
 
 // TODO [SNOW-2398035]: allow discontinuing the experiment

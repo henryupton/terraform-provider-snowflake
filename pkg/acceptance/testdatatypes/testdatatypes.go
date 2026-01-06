@@ -3,7 +3,7 @@ package testdatatypes
 import (
 	"fmt"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk/datatypes"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk/datatypes"
 )
 
 // TODO [SNOW-1843440]: create using constructors (when we add them)?

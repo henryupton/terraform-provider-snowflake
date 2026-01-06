@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/collections"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/collections"
 )
 
 // TableDataType is based on https://docs.snowflake.com/en/developer-guide/stored-procedure/stored-procedures-java#returning-tabular-data.

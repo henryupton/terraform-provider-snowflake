@@ -1,4 +1,4 @@
-module github.com/Snowflake-Labs/terraform-provider-snowflake
+module github.com/henryupton/terraform-provider-snowflakier
 
 go 1.24.9
 

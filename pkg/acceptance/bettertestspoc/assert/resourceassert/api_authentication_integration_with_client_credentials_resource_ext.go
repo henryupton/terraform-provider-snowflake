@@ -3,7 +3,7 @@ package resourceassert
 import (
 	"fmt"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert"
 )
 
 func (a *ApiAuthenticationIntegrationWithClientCredentialsResourceAssert) HasOauthAllowedScopes(values ...string) *ApiAuthenticationIntegrationWithClientCredentialsResourceAssert {

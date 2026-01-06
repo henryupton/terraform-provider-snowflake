@@ -3,8 +3,8 @@ package model
 import (
 	tfconfig "github.com/hashicorp/terraform-plugin-testing/config"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/collections"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/collections"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 )
 
 // WithExternalOauthTokenUserMappingClaim was added to satisfy the default builders. The method itself is not generated because its type is not yet supported.

@@ -6,7 +6,7 @@ package sdk
 import (
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/helpers/random"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/helpers/random"
 )
 
 func TestImageRepositories_Create(t *testing.T) {

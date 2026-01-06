@@ -8,9 +8,9 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/helpers"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/helpers"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/tfversion"
 )

@@ -5,8 +5,8 @@ package testacc
 import (
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/config/providermodel"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/testprofiles"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/config/providermodel"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/testprofiles"
 )
 
 // These tests ensure that the behavior for `generation` attribute is the same as before the 2025_07 bundle.

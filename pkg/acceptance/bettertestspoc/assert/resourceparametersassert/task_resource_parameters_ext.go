@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 )
 
 // TaskDatasourceParameters is a temporary workaround to have better parameter assertions in data source acceptance tests.

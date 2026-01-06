@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/helpers/random"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/helpers/random"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

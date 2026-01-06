@@ -7,9 +7,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert/objectassert"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/testenvs"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert/objectassert"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/testenvs"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 	"github.com/stretchr/testify/require"
 )
 

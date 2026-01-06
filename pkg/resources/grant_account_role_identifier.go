@@ -1,8 +1,8 @@
 package resources
 
 import (
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/helpers"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/helpers"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 )
 
 // TODO(SNOW-2314062): Use in resource

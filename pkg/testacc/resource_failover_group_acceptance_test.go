@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/testenvs"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider/resources"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/testenvs"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/provider/resources"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/tfversion"
 )

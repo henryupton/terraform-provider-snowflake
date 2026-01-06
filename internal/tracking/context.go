@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider/datasources"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider/resources"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/provider/datasources"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/provider/resources"
 )
 
 const (

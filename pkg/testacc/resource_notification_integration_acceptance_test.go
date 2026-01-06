@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider/resources"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/provider/resources"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/plancheck"
 	"github.com/hashicorp/terraform-plugin-testing/tfversion"
@@ -217,7 +217,7 @@ func TestAcc_NotificationIntegration_PushAzure(t *testing.T) {
 	t.Skip("Skipping because can't be currently created. Check 'create and describe notification integration - push azure' test in the SDK.")
 }
 
-// proves issue https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2501
+// proves issue https://github.com/henryupton/terraform-provider-snowflakier/issues/2501
 func TestAcc_NotificationIntegration_migrateFromVersion085(t *testing.T) {
 	id := testClient().Ids.RandomAccountObjectIdentifier()
 

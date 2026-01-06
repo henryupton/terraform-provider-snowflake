@@ -5,11 +5,11 @@ package testacc
 import (
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert/resourceassert"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/config"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/config/model"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/resources"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert/resourceassert"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/config"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/config/model"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/resources"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/tfversion"
 )
@@ -77,7 +77,7 @@ func TestAcc_AccountParameter_REQUIRE_STORAGE_INTEGRATION_FOR_STAGE_CREATION(t *
 	})
 }
 
-// Proves https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2573 is solved.
+// Proves https://github.com/henryupton/terraform-provider-snowflakier/issues/2573 is solved.
 // Instead of TIMEZONE, we used INITIAL_REPLICATION_SIZE_LIMIT_IN_TB which is only settable on account so it does not mess with other tests.
 func TestAcc_AccountParameter_Issue2573(t *testing.T) {
 	accountParameterModel := model.AccountParameter("test", string(sdk.AccountParameterInitialReplicationSizeLimitInTB), "3.0")

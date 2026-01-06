@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/provider"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/provider"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 	"github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"

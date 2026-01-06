@@ -3,9 +3,9 @@ package gen
 import (
 	"strings"
 
-	objectparametersassertgen "github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert/objectparametersassert/gen"
+	objectparametersassertgen "github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert/objectparametersassert/gen"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/genhelpers"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/genhelpers"
 )
 
 type ResourceParametersAssertionsModel struct {

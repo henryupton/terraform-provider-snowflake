@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/oswrapper"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/snowflakeenvs"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/oswrapper"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/snowflakeenvs"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/provider"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/snowflakedb/gosnowflake"
 )

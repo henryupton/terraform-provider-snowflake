@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider/resources"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/provider/resources"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/tfversion"
 )
@@ -52,7 +52,7 @@ resource "snowflake_email_notification_integration" "test" {
 	return fmt.Sprintf(s, name, email)
 }
 
-// TestAcc_EmailNotificationIntegration_issue2223 proves https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2223 issue.
+// TestAcc_EmailNotificationIntegration_issue2223 proves https://github.com/henryupton/terraform-provider-snowflakier/issues/2223 issue.
 // Snowflake allowed empty allowed recipients in https://docs.snowflake.com/en/release-notes/2023/7_40#email-notification-integrations-allowed-recipients-no-longer-required.
 func TestAcc_EmailNotificationIntegration_issue2223(t *testing.T) {
 	id := testClient().Ids.RandomAccountObjectIdentifier()

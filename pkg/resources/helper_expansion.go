@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"slices"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 )
 
 // borrowed from https://github.com/terraform-providers/terraform-provider-aws/blob/master/aws/structure.go#L924:6

@@ -5,9 +5,9 @@ package model
 import (
 	"encoding/json"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/config"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider/resources"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/config"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/provider/resources"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 	tfconfig "github.com/hashicorp/terraform-plugin-testing/config"
 )
 

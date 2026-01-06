@@ -3,7 +3,7 @@ package gen
 import (
 	"strings"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/genhelpers"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/genhelpers"
 )
 
 type ShowResultSchemaModel struct {

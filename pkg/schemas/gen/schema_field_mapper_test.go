@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/genhelpers"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/genhelpers"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/stretchr/testify/assert"
 )

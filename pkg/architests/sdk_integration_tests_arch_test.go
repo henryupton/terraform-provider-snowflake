@@ -3,7 +3,7 @@ package architests
 import (
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/architest"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/architest"
 )
 
 func TestArchCheck_IntegrationTests_Sdk(t *testing.T) {

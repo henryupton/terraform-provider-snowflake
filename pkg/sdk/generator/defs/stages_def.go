@@ -1,9 +1,9 @@
 package defs
 
 import (
-	g "github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk/generator/gen"
+	g "github.com/henryupton/terraform-provider-snowflakier/pkg/sdk/generator/gen"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk/generator/gen/sdkcommons"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk/generator/gen/sdkcommons"
 )
 
 // TODO(SNOW-1019005): part 2 - use a custom file format struct with a nice nesting

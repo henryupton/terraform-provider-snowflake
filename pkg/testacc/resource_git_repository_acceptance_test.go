@@ -5,22 +5,22 @@ package testacc
 import (
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/testvars"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/testvars"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/importchecks"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/helpers"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/importchecks"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/helpers"
 	"github.com/hashicorp/terraform-plugin-testing/plancheck"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert/resourceassert"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert/resourceshowoutputassert"
-	accconfig "github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/config"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/config/model"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/helpers/random"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/snowflakeroles"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider/resources"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert/resourceassert"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert/resourceshowoutputassert"
+	accconfig "github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/config"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/config/model"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/helpers/random"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/snowflakeroles"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/provider/resources"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/tfversion"
 )

@@ -3,7 +3,7 @@ package example
 import (
 	"bytes"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 )
 
 //go:generate go run ../main.go

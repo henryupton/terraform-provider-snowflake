@@ -4,8 +4,8 @@ import (
 	"log"
 	"slices"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/genhelpers"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/resources"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/genhelpers"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/resources"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 

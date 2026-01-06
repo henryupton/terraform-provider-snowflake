@@ -1,6 +1,6 @@
 export TEST_SF_TF_SKIP_SAML_INTEGRATION_TEST=true
 export TEST_SF_TF_SKIP_MANAGED_ACCOUNT_TEST=true
-export BASE_BINARY_NAME=terraform-provider-snowflake
+export BASE_BINARY_NAME=terraform-provider-snowflakier
 export TERRAFORM_PLUGINS_DIR=$(HOME)/.terraform.d/plugins
 export TERRAFORM_PLUGIN_LOCAL_INSTALL=$(TERRAFORM_PLUGINS_DIR)/$(BASE_BINARY_NAME)
 export LATEST_GIT_TAG=$(shell git tag --sort=-version:refname | head -n 1)
@@ -23,7 +23,7 @@ dev-cleanup: ## cleanup development dependencies
 	rm -rf tools/bin/*
 
 docs: generate-docs-additional-files ## generate docs
-	tools/bin/tfplugindocs generate --provider-name=terraform-provider-snowflake
+	tools/bin/tfplugindocs generate --provider-name=terraform-provider-snowflakier
 
 docs-check: docs ## check that docs have been generated
 	git diff --exit-code -- docs

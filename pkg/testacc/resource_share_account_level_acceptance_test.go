@@ -5,10 +5,10 @@ package testacc
 import (
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/config"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/config/providermodel"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/testprofiles"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider/resources"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/config"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/config/providermodel"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/testprofiles"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/provider/resources"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/tfversion"
 )

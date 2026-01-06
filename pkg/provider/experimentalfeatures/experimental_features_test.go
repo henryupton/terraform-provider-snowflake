@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider/experimentalfeatures"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/provider/experimentalfeatures"
 	"github.com/stretchr/testify/require"
 )
 

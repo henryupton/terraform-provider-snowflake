@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 )
 
 func CreateGrantPrivilegesToAccountRoleResourceIdOnAccount(grant sdk.Grant) string {

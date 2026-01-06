@@ -12,7 +12,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/scripts/issues"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/scripts/issues"
 )
 
 var (

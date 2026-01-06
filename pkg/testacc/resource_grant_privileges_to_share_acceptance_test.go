@@ -7,7 +7,7 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 	"github.com/hashicorp/terraform-plugin-testing/config"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/plancheck"
@@ -648,7 +648,7 @@ func TestAcc_GrantPrivilegesToShare_NoOnOption(t *testing.T) {
 	})
 }
 
-// proves https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2621 doesn't apply to this resource
+// proves https://github.com/henryupton/terraform-provider-snowflakier/issues/2621 doesn't apply to this resource
 func TestAcc_GrantPrivilegesToShare_RemoveShareOutsideTerraform(t *testing.T) {
 	t.Skip("Should be addressed in SNOW-2048471 - without this task done, the test cannot be properly asserted in the terraform testing framework")
 

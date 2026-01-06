@@ -6,15 +6,15 @@ import (
 	"errors"
 	"log"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider/datasources"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider/previewfeatures"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/provider/datasources"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/provider/previewfeatures"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/provider"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/provider"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/snowflake"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/snowflake"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 

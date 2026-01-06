@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/testfiles"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/testfiles"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 	"github.com/stretchr/testify/require"
 )
 

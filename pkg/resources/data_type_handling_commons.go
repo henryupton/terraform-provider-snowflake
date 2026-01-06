@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk/datatypes"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk/datatypes"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 

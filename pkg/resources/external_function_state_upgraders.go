@@ -5,8 +5,8 @@ import (
 	"encoding/csv"
 	"strings"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk/datatypes"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk/datatypes"
 )
 
 type v085ExternalFunctionId struct {

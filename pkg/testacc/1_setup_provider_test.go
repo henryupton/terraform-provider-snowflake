@@ -4,12 +4,12 @@ import (
 	"context"
 	"fmt"
 
-	internalprovider "github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/provider"
+	internalprovider "github.com/henryupton/terraform-provider-snowflakier/pkg/internal/provider"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/testenvs"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/oswrapper"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider/previewfeatures"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/testenvs"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/oswrapper"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/provider"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/provider/previewfeatures"
 	"github.com/hashicorp/terraform-plugin-go/tfprotov6"
 	"github.com/hashicorp/terraform-plugin-mux/tf5to6server"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"

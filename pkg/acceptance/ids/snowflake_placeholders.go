@@ -1,5 +1,5 @@
 package ids
 
-import "github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+import "github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 
 var DatabasePlaceholder = sdk.NewAccountObjectIdentifier("<DB>")

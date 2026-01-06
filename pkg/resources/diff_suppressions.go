@@ -6,9 +6,9 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/helpers"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk/datatypes"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/helpers"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk/datatypes"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 

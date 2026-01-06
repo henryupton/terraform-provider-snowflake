@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 	tfconfig "github.com/hashicorp/terraform-plugin-testing/config"
 	"github.com/stretchr/testify/require"
 )

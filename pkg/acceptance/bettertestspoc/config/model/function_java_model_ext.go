@@ -5,9 +5,9 @@ import (
 
 	tfconfig "github.com/hashicorp/terraform-plugin-testing/config"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/collections"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk/datatypes"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/collections"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk/datatypes"
 )
 
 func FunctionJavaBasicInline(

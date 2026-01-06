@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/genhelpers"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/genhelpers"
 )
 
 type SnowflakeObjectParametersAssertionsModel struct {

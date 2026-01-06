@@ -3,9 +3,9 @@ package model
 import (
 	tfconfig "github.com/hashicorp/terraform-plugin-testing/config"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/config"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/collections"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/config"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/collections"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 )
 
 func (t *OauthIntegrationForCustomClientsModel) WithBlockedRolesList(blockedRoles ...string) *OauthIntegrationForCustomClientsModel {

@@ -1,9 +1,9 @@
 package model
 
 import (
-	r "github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/resources"
+	r "github.com/henryupton/terraform-provider-snowflakier/pkg/resources"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 )
 
 func BasicWarehouseModel(

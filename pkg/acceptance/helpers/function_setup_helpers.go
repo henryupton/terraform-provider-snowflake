@@ -8,11 +8,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/helpers/random"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/testdatatypes"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/testvars"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk/datatypes"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/helpers/random"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/testdatatypes"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/testvars"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk/datatypes"
 	"github.com/stretchr/testify/require"
 )
 

@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/architest"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/architest"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -8,15 +8,15 @@ import (
 	"strings"
 	"testing"
 
-	accconfig "github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/config"
+	accconfig "github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/config"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert/resourceassert"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/config/model"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/testdatatypes"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/helpers"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/provider"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert/resourceassert"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/config/model"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/testdatatypes"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/helpers"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/provider"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/plancheck"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
@@ -292,7 +292,7 @@ func TestAcc_TagAssociationSchema(t *testing.T) {
 	})
 }
 
-// proves https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/3235 is fixed
+// proves https://github.com/henryupton/terraform-provider-snowflakier/issues/3235 is fixed
 func TestAcc_TagAssociation_lowercaseObjectType(t *testing.T) {
 	tag, tagCleanup := testClient().Tag.CreateTag(t)
 	t.Cleanup(tagCleanup)

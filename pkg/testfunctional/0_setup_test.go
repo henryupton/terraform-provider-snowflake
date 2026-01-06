@@ -6,7 +6,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/testenvs"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/testenvs"
 )
 
 var functionalTestLog = log.New(os.Stdout, "", log.LstdFlags)

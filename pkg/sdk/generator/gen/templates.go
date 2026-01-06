@@ -5,7 +5,7 @@ import (
 
 	_ "embed"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/genhelpers"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/genhelpers"
 )
 
 func deref[T ~string](p *T) string {

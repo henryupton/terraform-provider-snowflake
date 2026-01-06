@@ -3,8 +3,8 @@ package resources
 import (
 	"context"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/helpers"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/helpers"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 )
 
 // v0941ResourceIdentifierWithArguments migrates functions, procedures, and external functions to use the new identifier type.

@@ -5,9 +5,9 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/helpers"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/helpers"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 )
 
 // TODO [SNOW-1501905]: this file should be fully regenerated when adding and option to assert the results of describe

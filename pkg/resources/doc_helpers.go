@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	providerresources "github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider/resources"
+	providerresources "github.com/henryupton/terraform-provider-snowflakier/pkg/provider/resources"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/provider/docs"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/provider/docs"
 )
 
 func possibleValuesListed[T ~string | ~int](values []T) string {

@@ -1,6 +1,6 @@
 package gen
 
-import "github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+import "github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 
 var SdkShowResultStructs = []any{
 	sdk.Account{},

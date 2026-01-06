@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/collections"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/collections"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 	"github.com/hashicorp/terraform-plugin-testing/config"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/plancheck"
@@ -940,7 +940,7 @@ func TestAcc_GrantPrivilegesToDatabaseRole_AlwaysApply(t *testing.T) {
 	})
 }
 
-// proved https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2651
+// proved https://github.com/henryupton/terraform-provider-snowflakier/issues/2651
 func TestAcc_GrantPrivilegesToDatabaseRole_MLPrivileges(t *testing.T) {
 	databaseRole, databaseRoleCleanup := testClient().DatabaseRole.CreateDatabaseRole(t)
 	t.Cleanup(databaseRoleCleanup)
@@ -987,7 +987,7 @@ func TestAcc_GrantPrivilegesToDatabaseRole_MLPrivileges(t *testing.T) {
 	})
 }
 
-// proves https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2459 is fixed
+// proves https://github.com/henryupton/terraform-provider-snowflakier/issues/2459 is fixed
 func TestAcc_GrantPrivilegesToDatabaseRole_ChangeWithGrantOptionsOutsideOfTerraform_WithGrantOptions(t *testing.T) {
 	databaseRole, databaseRoleCleanup := testClient().DatabaseRole.CreateDatabaseRole(t)
 	t.Cleanup(databaseRoleCleanup)
@@ -1038,7 +1038,7 @@ func TestAcc_GrantPrivilegesToDatabaseRole_ChangeWithGrantOptionsOutsideOfTerraf
 	})
 }
 
-// proves https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2459 is fixed
+// proves https://github.com/henryupton/terraform-provider-snowflakier/issues/2459 is fixed
 func TestAcc_GrantPrivilegesToDatabaseRole_ChangeWithGrantOptionsOutsideOfTerraform_WithoutGrantOptions(t *testing.T) {
 	databaseRole, databaseRoleCleanup := testClient().DatabaseRole.CreateDatabaseRole(t)
 	t.Cleanup(databaseRoleCleanup)
@@ -1089,7 +1089,7 @@ func TestAcc_GrantPrivilegesToDatabaseRole_ChangeWithGrantOptionsOutsideOfTerraf
 	})
 }
 
-// proves https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2621 doesn't apply to this resource
+// proves https://github.com/henryupton/terraform-provider-snowflakier/issues/2621 doesn't apply to this resource
 func TestAcc_GrantPrivilegesToDatabaseRole_RemoveGrantedObjectOutsideTerraform(t *testing.T) {
 	database, databaseCleanup := testClient().Database.CreateDatabaseWithParametersSet(t)
 	t.Cleanup(databaseCleanup)
@@ -1128,7 +1128,7 @@ func TestAcc_GrantPrivilegesToDatabaseRole_RemoveGrantedObjectOutsideTerraform(t
 	})
 }
 
-// proves https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2621 doesn't apply to this resource
+// proves https://github.com/henryupton/terraform-provider-snowflakier/issues/2621 doesn't apply to this resource
 func TestAcc_GrantPrivilegesToDatabaseRole_RemoveDatabaseRoleOutsideTerraform(t *testing.T) {
 	database, databaseCleanup := testClient().Database.CreateDatabaseWithParametersSet(t)
 	t.Cleanup(databaseCleanup)
@@ -1167,7 +1167,7 @@ func TestAcc_GrantPrivilegesToDatabaseRole_RemoveDatabaseRoleOutsideTerraform(t 
 	})
 }
 
-// proves https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2689 is fixed
+// proves https://github.com/henryupton/terraform-provider-snowflakier/issues/2689 is fixed
 func TestAcc_GrantPrivilegesToDatabaseRole_AlwaysApply_SetAfterCreate(t *testing.T) {
 	databaseRole, databaseRoleCleanup := testClient().DatabaseRole.CreateDatabaseRole(t)
 	t.Cleanup(databaseRoleCleanup)
@@ -1202,7 +1202,7 @@ func TestAcc_GrantPrivilegesToDatabaseRole_AlwaysApply_SetAfterCreate(t *testing
 	})
 }
 
-// proves https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2960
+// proves https://github.com/henryupton/terraform-provider-snowflakier/issues/2960
 func TestAcc_GrantPrivilegesToDatabaseRole_CreateNotebooks(t *testing.T) {
 	databaseRole, databaseRoleCleanup := testClient().DatabaseRole.CreateDatabaseRole(t)
 	t.Cleanup(databaseRoleCleanup)
@@ -1370,7 +1370,7 @@ func TestAcc_GrantPrivilegesToDatabaseRole_IdentifierQuotingDiffSuppression(t *t
 	})
 }
 
-// proves https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/3050
+// proves https://github.com/henryupton/terraform-provider-snowflakier/issues/3050
 func TestAcc_GrantPrivilegesToDatabaseRole_OnFutureModels_issue3050(t *testing.T) {
 	databaseRoleId := testClient().Ids.RandomDatabaseObjectIdentifier()
 

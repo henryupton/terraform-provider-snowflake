@@ -4,7 +4,7 @@ import (
 	"errors"
 	"strconv"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 )
 
 var _ ConvertibleCsvRow[WarehouseRepresentation] = new(WarehouseCsvRow)

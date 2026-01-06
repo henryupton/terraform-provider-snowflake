@@ -1,6 +1,6 @@
 package sdk
 
-import g "github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk/generator/gen"
+import g "github.com/henryupton/terraform-provider-snowflakier/pkg/sdk/generator/gen"
 
 var sequenceSet = g.NewQueryStruct("SequenceSet").
 	PredefinedQueryStructField("ValuesBehavior", "*ValuesBehavior", g.KeywordOptions()).

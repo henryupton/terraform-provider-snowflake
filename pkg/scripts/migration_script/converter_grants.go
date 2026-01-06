@@ -4,7 +4,7 @@ import (
 	"log"
 	"strings"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 )
 
 var _ ConvertibleCsvRow[sdk.Grant] = new(GrantCsvRow)

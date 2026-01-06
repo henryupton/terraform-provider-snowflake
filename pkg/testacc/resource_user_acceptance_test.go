@@ -9,20 +9,20 @@ import (
 	"strings"
 	"testing"
 
-	r "github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/resources"
+	r "github.com/henryupton/terraform-provider-snowflakier/pkg/resources"
 	tfjson "github.com/hashicorp/terraform-json"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert/objectassert"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert/objectparametersassert"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert/resourceassert"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert/resourceparametersassert"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert/resourceshowoutputassert"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/config"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/config/model"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/helpers/random"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/planchecks"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider/resources"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert/objectassert"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert/objectparametersassert"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert/resourceassert"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert/resourceparametersassert"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert/resourceshowoutputassert"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/config"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/config/model"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/helpers/random"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/planchecks"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/provider/resources"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/plancheck"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
@@ -284,8 +284,8 @@ func TestAcc_User_BasicFlows(t *testing.T) {
 	})
 }
 
-// proves https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2481 has been fixed
-// proves https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2353 has been fixed
+// proves https://github.com/henryupton/terraform-provider-snowflakier/issues/2481 has been fixed
+// proves https://github.com/henryupton/terraform-provider-snowflakier/issues/2353 has been fixed
 // done on user, to not interfere with other parallel tests on the same account
 func TestAcc_User_RemovedOutsideOfTerraform(t *testing.T) {
 	userId := testClient().Ids.RandomAccountObjectIdentifier()
@@ -330,7 +330,7 @@ func TestAcc_User_RemovedOutsideOfTerraform(t *testing.T) {
 	})
 }
 
-// TestAcc_User_issue2058 proves https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2058 issue.
+// TestAcc_User_issue2058 proves https://github.com/henryupton/terraform-provider-snowflakier/issues/2058 issue.
 // The problem was with a dot in user identifier.
 // Before the fix it results in panic: interface conversion: sdk.ObjectIdentifier is sdk.DatabaseObjectIdentifier, not sdk.AccountObjectIdentifier error.
 func TestAcc_User_issue2058(t *testing.T) {
@@ -1380,7 +1380,7 @@ func TestAcc_User_LoginNameAndDisplayName(t *testing.T) {
 }
 
 // https://docs.snowflake.com/en/release-notes/bcr-bundles/2024_08/bcr-1798
-// https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/3125
+// https://github.com/henryupton/terraform-provider-snowflakier/issues/3125
 func TestAcc_User_handleChangesToShowUsers_bcr202408_gh3125(t *testing.T) {
 	userId := testClient().Ids.RandomAccountObjectIdentifier()
 
@@ -1414,7 +1414,7 @@ func TestAcc_User_handleChangesToShowUsers_bcr202408_gh3125(t *testing.T) {
 
 // https://docs.snowflake.com/en/release-notes/bcr-bundles/2024_08/bcr-1798
 // https://docs.snowflake.com/release-notes/bcr-bundles/2024_08/bcr-1692
-// https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/3125
+// https://github.com/henryupton/terraform-provider-snowflakier/issues/3125
 func TestAcc_User_handleChangesToShowUsers_bcr202408_generallyEnabled(t *testing.T) {
 	userId := testClient().Ids.RandomAccountObjectIdentifier()
 

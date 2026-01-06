@@ -8,11 +8,11 @@ import (
 	"os"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/helpers"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/helpers/random/acceptancetests"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/testenvs"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/testprofiles"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/helpers"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/helpers/random/acceptancetests"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/testenvs"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/testprofiles"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 	"github.com/snowflakedb/gosnowflake"
 )
 

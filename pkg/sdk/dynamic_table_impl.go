@@ -3,7 +3,7 @@ package sdk
 import (
 	"context"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/collections"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/collections"
 )
 
 var (

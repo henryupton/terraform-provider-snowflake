@@ -3,8 +3,8 @@ package resources
 import (
 	"errors"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/schemas"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/schemas"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 

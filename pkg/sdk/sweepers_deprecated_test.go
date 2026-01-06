@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 )
 
 func getAccountPolicyAttachmentsSweeper(client *sdk.Client) func() error {

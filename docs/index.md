@@ -1,28 +1,14 @@
 ---
-page_title: "Provider: Snowflake"
-description: Manage SnowflakeDB with Terraform.
+page_title: "Provider: Snowflakier"
+description: Manage SnowflakeDB with Terraform (Extended Fork).
 ---
 
-## Support
+# Snowflakier Provider
 
-For official support and urgent, production-impacting issues, please [contact Snowflake Support](https://community.snowflake.com/s/article/How-To-Submit-a-Support-Case-in-Snowflake-Lodge).
+~> **Note** This is an unofficial fork of the [official Snowflake Terraform Provider](https://github.com/Snowflake-Labs/terraform-provider-snowflake) maintained by [@henryupton](https://github.com/henryupton). For official support, use the [official provider](https://registry.terraform.io/providers/Snowflake-Labs/snowflake).
 
-~> **Keep in mind** that the official support starts with the [v2.0.0](https://registry.terraform.io/providers/snowflakedb/snowflake/2.0.0) version for stable resources only. All previous versions and preview resources are not officially supported. Also, consult [supported architectures](#supported-architectures).
-
-Please follow [creating issues guidelines](https://github.com/snowflakedb/terraform-provider-snowflake/blob/main/CREATING_ISSUES.md), [FAQ](https://github.com/snowflakedb/terraform-provider-snowflake/blob/main/FAQ.md), and [known issues](https://github.com/snowflakedb/terraform-provider-snowflake/blob/main/KNOWN_ISSUES.md) before submitting an issue on GitHub or directly to Snowflake Support.
-
-# Snowflake Provider
-
-~> **Disclaimer** The project is in GA version, but some features are in preview. Such resources and data sources are considered preview features in the provider, regardless of their state in Snowflake. We do not guarantee their stability. They will be reworked and marked as a stable feature in future releases. Breaking changes in these features are expected, even without bumping the major version. They are disabled by default. To use them, add the relevant feature name to `preview_features_enabled` field in the [provider configuration](https://registry.terraform.io/providers/snowflakedb/snowflake/latest/docs#schema). The list of preview features is available below. Please always refer to the [Getting Help](https://github.com/snowflakedb/terraform-provider-snowflake?tab=readme-ov-file#getting-help) section in our Github repo to best determine how to get help for your questions. You can also use [`experimental_features_enabled`](https://registry.terraform.io/providers/snowflakedb/snowflake/latest/docs#experimental_features_enabled-1) to alter the provider's behavior. **It's still considered a preview feature, even when applied to the stable resources.**
-
-~> **Note** Please check the [migration guide](https://github.com/snowflakedb/terraform-provider-snowflake/blob/main/MIGRATION_GUIDE.md) when changing the version of the provider.
-
-!> **Sensitive values** Important: Do not include credentials, personal identifiers, or other regulated or sensitive information (e.g., GDPR, HIPAA, PCI-DSS data) in non-sensitive fields. Snowflake marks specific fields as sensitive—such as passwords, private keys, and tokens, meaning these fields will not appear in logs. Each sensitive field is properly marked in the documentation. All other fields are treated as non-sensitive by default. Some of them, like [task's](./resources/task) configuration, may contain sensitive information but are not marked as sensitive - you are responsible for safeguarding these fields according to your organization's security standards and regulatory requirements. Snowflake will not be liable for any exposure of data placed in non-sensitive fields. Read more in the [Sensitive values limitations](#sensitive-values-limitations) section.
-
--> **Note** The current roadmap is available in our GitHub repository: [ROADMAP.md](https://github.com/snowflakedb/terraform-provider-snowflake/blob/main/ROADMAP.md).
-
-This is a terraform provider plugin for managing [Snowflake](https://www.snowflake.com/) accounts.
-Coverage is focused on part of Snowflake related to access control.
+This is a terraform provider plugin for managing [Snowflake](https://www.snowflake.com/) accounts with extended functionality.
+The provider maintains compatibility with the base Snowflake provider and can be used alongside it.
 
 ## Supported architectures
 
@@ -47,15 +33,15 @@ This is an example configuration of the provider in `main.tf` in a configuration
 ```terraform
 terraform {
   required_providers {
-    snowflake = {
-      source = "snowflakedb/snowflake"
+    snowflakier = {
+      source = "henryupton/snowflakier"
     }
   }
 }
 
 # A simple configuration of the provider with a default authentication.
 # A default value for `authenticator` is `snowflake`, enabling authentication with `user` and `password`.
-provider "snowflake" {
+provider "snowflakier" {
   organization_name = "..." # required if not using profile. Can also be set via SNOWFLAKE_ORGANIZATION_NAME env var
   account_name      = "..." # required if not using profile. Can also be set via SNOWFLAKE_ACCOUNT_NAME env var
   user              = "..." # required if not using profile or token. Can also be set via SNOWFLAKE_USER env var
@@ -71,7 +57,7 @@ provider "snowflake" {
 }
 
 # A simple configuration of the provider with private key authentication.
-provider "snowflake" {
+provider "snowflakier" {
   organization_name      = "..." # required if not using profile. Can also be set via SNOWFLAKE_ORGANIZATION_NAME env var
   account_name           = "..." # required if not using profile. Can also be set via SNOWFLAKE_ACCOUNT_NAME env var
   user                   = "..." # required if not using profile or token. Can also be set via SNOWFLAKE_USER env var

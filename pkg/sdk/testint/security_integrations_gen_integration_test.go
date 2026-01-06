@@ -7,10 +7,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/helpers/random"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/collections"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/snowflakeroles"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/helpers/random"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/collections"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/snowflakeroles"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -528,7 +528,7 @@ func TestInt_SecurityIntegrations(t *testing.T) {
 	})
 
 	// Prove that creating a security integration with a specified network policy id with lower case characters fails. This is an intended behavior in Snowflake.
-	// https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/3229
+	// https://github.com/henryupton/terraform-provider-snowflakier/issues/3229
 	t.Run("CreateOauthCustom_issue3229_lowercase_network_policy_fails_with_double_quotes", func(t *testing.T) {
 		networkPolicyId := testClientHelper().Ids.RandomAccountObjectIdentifierWithPrefix("test")
 		networkPolicy, networkPolicyCleanup := testClientHelper().NetworkPolicy.CreateNetworkPolicyWithRequest(t, sdk.NewCreateNetworkPolicyRequest(networkPolicyId))
@@ -951,7 +951,7 @@ func TestInt_SecurityIntegrations(t *testing.T) {
 	})
 
 	// Prove that altering a security integration with a specified network policy id with lower case characters fails. This is a bug in Snowflake.
-	// https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/3229
+	// https://github.com/henryupton/terraform-provider-snowflakier/issues/3229
 	t.Run("AlterOauthCustom_issue3229_lowercase_network_policy_fails_with_double_quotes", func(t *testing.T) {
 		networkPolicyId := testClientHelper().Ids.RandomAccountObjectIdentifierWithPrefix("test")
 		networkPolicy, networkPolicyCleanup := testClientHelper().NetworkPolicy.CreateNetworkPolicyWithRequest(t, sdk.NewCreateNetworkPolicyRequest(networkPolicyId))

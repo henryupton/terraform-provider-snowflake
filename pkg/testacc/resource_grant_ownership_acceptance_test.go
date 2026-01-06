@@ -9,8 +9,8 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/provider"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/provider"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 	"github.com/hashicorp/terraform-plugin-testing/config"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/plancheck"
@@ -1579,7 +1579,7 @@ resource "snowflake_grant_ownership" "test" {
 `, databaseName, schemaName, tableName, roleName, fullTableName)
 }
 
-// confirms addition of resource monitor as part of https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/3318
+// confirms addition of resource monitor as part of https://github.com/henryupton/terraform-provider-snowflakier/issues/3318
 func TestAcc_GrantOwnership_OnObject_ResourceMonitor_ToAccountRole(t *testing.T) {
 	resourceMonitorId := testClient().Ids.RandomAccountObjectIdentifier()
 	resourceMonitorName := resourceMonitorId.Name()

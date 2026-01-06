@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/provider"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/schemas"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/provider"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/schemas"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 )
 
 func v2_9_0_AuthenticationPolicyStateUpgrader(ctx context.Context, rawState map[string]any, meta any) (map[string]any, error) {

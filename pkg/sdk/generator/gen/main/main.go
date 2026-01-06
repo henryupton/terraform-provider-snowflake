@@ -5,11 +5,11 @@ package main
 import (
 	"text/template"
 
-	_ "github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk/generator/defs"
-	_ "github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk/generator/example/defs"
+	_ "github.com/henryupton/terraform-provider-snowflakier/pkg/sdk/generator/defs"
+	_ "github.com/henryupton/terraform-provider-snowflakier/pkg/sdk/generator/example/defs"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/genhelpers"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk/generator/gen"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/genhelpers"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk/generator/gen"
 )
 
 const (

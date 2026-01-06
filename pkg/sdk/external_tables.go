@@ -72,7 +72,7 @@ type CreateExternalTableOptions struct {
 	AutoRefresh         *bool                     `ddl:"parameter" sql:"AUTO_REFRESH"`
 	Pattern             *string                   `ddl:"parameter,single_quotes" sql:"PATTERN"`
 	FileFormat          []ExternalTableFileFormat `ddl:"parameter,parentheses" sql:"FILE_FORMAT"`
-	// RawFileFormat was introduced, because of the decision taken during https://github.com/Snowflake-Labs/terraform-provider-snowflake/pull/2228
+	// RawFileFormat was introduced, because of the decision taken during https://github.com/henryupton/terraform-provider-snowflakier/pull/2228
 	// that for now the snowflake_external_table resource should continue on using raw file format, which wasn't previously supported by the new SDK.
 	// In the future it should most likely be replaced by a more structured version FileFormat
 	RawFileFormat   *RawFileFormat        `ddl:"list,parentheses" sql:"FILE_FORMAT ="`
@@ -209,7 +209,7 @@ type CreateWithManualPartitioningExternalTableOptions struct {
 	Location                   string                    `ddl:"parameter" sql:"LOCATION"`
 	userSpecifiedPartitionType bool                      `ddl:"static" sql:"PARTITION_TYPE = USER_SPECIFIED"`
 	FileFormat                 []ExternalTableFileFormat `ddl:"parameter,parentheses" sql:"FILE_FORMAT"`
-	// RawFileFormat was introduced, because of the decision taken during https://github.com/Snowflake-Labs/terraform-provider-snowflake/pull/2228
+	// RawFileFormat was introduced, because of the decision taken during https://github.com/henryupton/terraform-provider-snowflakier/pull/2228
 	// that for now the snowflake_external_table resource should continue on using raw file format, which wasn't previously supported by the new SDK.
 	// In the future it should most likely be replaced by a more structured version FileFormat
 	RawFileFormat   *RawFileFormat        `ddl:"list,parentheses" sql:"FILE_FORMAT ="`
@@ -233,7 +233,7 @@ type CreateDeltaLakeExternalTableOptions struct {
 	RefreshOnCreate     *bool                     `ddl:"parameter" sql:"REFRESH_ON_CREATE"`
 	AutoRefresh         *bool                     `ddl:"parameter" sql:"AUTO_REFRESH"`
 	FileFormat          []ExternalTableFileFormat `ddl:"parameter,parentheses" sql:"FILE_FORMAT"`
-	// RawFileFormat was introduced, because of the decision taken during https://github.com/Snowflake-Labs/terraform-provider-snowflake/pull/2228
+	// RawFileFormat was introduced, because of the decision taken during https://github.com/henryupton/terraform-provider-snowflakier/pull/2228
 	// that for now the snowflake_external_table resource should continue on using raw file format, which wasn't previously supported by the new SDK.
 	// In the future it should most likely be replaced by a more structured version FileFormat
 	RawFileFormat    *RawFileFormat        `ddl:"list,parentheses" sql:"FILE_FORMAT ="`
@@ -259,7 +259,7 @@ type CreateExternalTableUsingTemplateOptions struct {
 	AutoRefresh         *bool                     `ddl:"parameter" sql:"AUTO_REFRESH"`
 	Pattern             *string                   `ddl:"parameter,single_quotes" sql:"PATTERN"`
 	FileFormat          []ExternalTableFileFormat `ddl:"parameter,parentheses" sql:"FILE_FORMAT"`
-	// RawFileFormat was introduced, because of the decision taken during https://github.com/Snowflake-Labs/terraform-provider-snowflake/pull/2228
+	// RawFileFormat was introduced, because of the decision taken during https://github.com/henryupton/terraform-provider-snowflakier/pull/2228
 	// that for now the snowflake_external_table resource should continue on using raw file format, which wasn't previously supported by the new SDK.
 	// In the future it should most likely be replaced by a more structured version FileFormat
 	RawFileFormat   *RawFileFormat        `ddl:"list,parentheses" sql:"FILE_FORMAT ="`

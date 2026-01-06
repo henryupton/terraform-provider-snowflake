@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/testfunctional/common"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/testfunctional/httpserver"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/testfunctional/common"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/testfunctional/httpserver"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/tfversion"
 )

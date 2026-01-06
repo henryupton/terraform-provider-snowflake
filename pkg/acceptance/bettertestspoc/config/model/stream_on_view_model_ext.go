@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 )
 
 func StreamOnViewBase(resourceName string, id sdk.SchemaObjectIdentifier, viewId sdk.SchemaObjectIdentifier) *StreamOnViewModel {

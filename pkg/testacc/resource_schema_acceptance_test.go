@@ -10,21 +10,21 @@ import (
 	"strconv"
 	"testing"
 
-	accconfig "github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/config"
-	r "github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/resources"
+	accconfig "github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/config"
+	r "github.com/henryupton/terraform-provider-snowflakier/pkg/resources"
 	tfjson "github.com/hashicorp/terraform-json"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert/objectassert"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert/objectparametersassert"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert/resourceassert"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert/resourceshowoutputassert"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/config/model"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/helpers/random"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/planchecks"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/helpers"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider/resources"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert/objectassert"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert/objectparametersassert"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert/resourceassert"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert/resourceshowoutputassert"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/config/model"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/helpers/random"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/planchecks"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/helpers"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/provider/resources"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/plancheck"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
@@ -548,7 +548,7 @@ func TestAcc_Schema_ManagePublicVersion_0_94_1(t *testing.T) {
 	})
 }
 
-// TestAcc_Schema_TwoSchemasWithTheSameNameOnDifferentDatabases proves https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2209 issue.
+// TestAcc_Schema_TwoSchemasWithTheSameNameOnDifferentDatabases proves https://github.com/henryupton/terraform-provider-snowflakier/issues/2209 issue.
 func TestAcc_Schema_TwoSchemasWithTheSameNameOnDifferentDatabases(t *testing.T) {
 	// It seems like Snowflake orders the output of SHOW command based on names, so they do matter
 	db1Id := testClient().Ids.RandomAccountObjectIdentifierWithPrefix("A")
@@ -593,7 +593,7 @@ func TestAcc_Schema_TwoSchemasWithTheSameNameOnDifferentDatabases(t *testing.T) 
 	})
 }
 
-// proves https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2356 issue is fixed.
+// proves https://github.com/henryupton/terraform-provider-snowflakier/issues/2356 issue is fixed.
 func TestAcc_Schema_DefaultDataRetentionTime(t *testing.T) {
 	db, dbCleanup := testClient().Database.CreateDatabaseWithParametersSet(t)
 	t.Cleanup(dbCleanup)
@@ -680,7 +680,7 @@ func TestAcc_Schema_DefaultDataRetentionTime(t *testing.T) {
 	})
 }
 
-// proves https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2356 issue is fixed.
+// proves https://github.com/henryupton/terraform-provider-snowflakier/issues/2356 issue is fixed.
 func TestAcc_Schema_DefaultDataRetentionTime_SetOutsideOfTerraform(t *testing.T) {
 	db, dbCleanup := testClient().Database.CreateDatabaseWithParametersSet(t)
 	t.Cleanup(dbCleanup)

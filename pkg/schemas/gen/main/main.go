@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"slices"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/genhelpers"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/schemas/gen"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/genhelpers"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/schemas/gen"
 	"golang.org/x/exp/maps"
 )
 
@@ -19,7 +19,7 @@ const (
 func main() {
 	genhelpers.NewGenerator(
 		genhelpers.NewPreambleModel(name, version).
-			WithImport("github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk").
+			WithImport("github.com/henryupton/terraform-provider-snowflakier/pkg/sdk").
 			WithImport("github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"),
 		getStructDetails,
 		gen.ModelFromStructDetails,

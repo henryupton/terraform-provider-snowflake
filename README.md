@@ -8,19 +8,13 @@ For official support and urgent, production-impacting issues, please [contact Sn
 
 Please follow [creating issues guidelines](CREATING_ISSUES.md), [FAQ](FAQ.md), and [known issues](KNOWN_ISSUES.md) before submitting an issue on GitHub or directly to Snowflake Support.
 
-# Snowflake Terraform Provider
+# Snowflakier Terraform Provider
 
-> ⚠️ **Please note**: If you believe you have found a security issue, _please responsibly disclose_ by contacting us at [triage-terraformprovider-dl@snowflake.com](mailto:triage-terraformprovider-dl@snowflake.com).
+This is a fork of the official [Snowflake Terraform Provider](https://github.com/Snowflake-Labs/terraform-provider-snowflake) with additional functionality while maintaining compatibility with the base provider.
 
-> ⚠️ **Disclaimer**: The project is in GA version, but some features are in preview. Such resources and data sources are considered preview features in the provider, regardless of their state in Snowflake. We do not guarantee their stability. They will be reworked and marked as a stable feature in future releases. Breaking changes in these features are expected, even without bumping the major version. They are disabled by default. To use them, add the relevant feature name to `preview_features_enabled` field in the [provider configuration](https://registry.terraform.io/providers/snowflakedb/snowflake/latest/docs#schema). The list of preview features is available below. Please always refer to the [Getting Help](https://github.com/snowflakedb/terraform-provider-snowflake?tab=readme-ov-file#getting-help) section in our Github repo to best determine how to get help for your questions.
+> ⚠️ **Note**: This is an unofficial fork maintained by [@henryupton](https://github.com/henryupton). For official support, use the [official Snowflake provider](https://registry.terraform.io/providers/Snowflake-Labs/snowflake).
 
-> **Contributing**: We welcome any contributions to the project! Before submitting a PR, please make sure to familiarize with [our contribution guidelines](CONTRIBUTING.md)!
-
-----
-
-![.github/workflows/ci.yml](https://github.com/snowflakedb/terraform-provider-snowflake/workflows/.github/workflows/ci.yml/badge.svg)
-
-This is a terraform provider for managing [Snowflake](https://www.snowflake.com/) resources.
+This is a terraform provider for managing [Snowflake](https://www.snowflake.com/) resources with extended capabilities.
 
 ## Table of contents
 <!-- TOC -->
@@ -39,24 +33,24 @@ This is a terraform provider for managing [Snowflake](https://www.snowflake.com/
 
 ## Getting started
 
-> The current namespace of the provider in the Terraform Registry is [snowflakedb](https://registry.terraform.io/namespaces/snowflakedb).
->
-> If you're still using the `chanzuckerberg/snowflake` source, see [Upgrading from CZI Provider](./CZI_UPGRADE.md) to upgrade to the Snowflake-Labs namespace.
->
-> If you're still using the `Snowflake-Labs/snowflake` source, see [Upgrading from Snowflake-Labs Provider](./SNOWFLAKEDB_MIGRATION.md) to upgrade to the snowflakedb namespace.
+Install the Snowflakier Terraform provider by adding a requirement block and a provider block to your Terraform codebase:
 
-Install the Snowflake Terraform provider by adding a requirement block and a provider block to your Terraform codebase:
 ```hcl
 terraform {
   required_providers {
+    snowflakier = {
+      source  = "henryupton/snowflakier"
+      version = ">= 0.1.0"
+    }
+    # You can use both providers side-by-side
     snowflake = {
-      source  = "snowflakedb/snowflake"
+      source  = "Snowflake-Labs/snowflake"
       version = ">= 1.0.0"
     }
   }
 }
 
-provider "snowflake" {
+provider "snowflakier" {
   organization_name = "organization_name"
   account_name      = "account_name"
   user              = "johndoe"
@@ -71,7 +65,7 @@ variable "password" {
 }
 ```
 
-For more information on provider configuration see the [provider docs on the Terraform registry](https://registry.terraform.io/providers/snowflakedb/snowflake/latest/docs).
+This fork maintains resource compatibility with the base Snowflake provider, so you can use them together.
 
 Don't forget to run `terraform init` and you're ready to go! 🚀
 

@@ -7,9 +7,9 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/helpers/random"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider/resources"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/helpers/random"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/provider/resources"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 	"github.com/hashicorp/terraform-plugin-testing/config"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/plancheck"
@@ -161,7 +161,7 @@ func TestAcc_DynamicTable_basic(t *testing.T) {
 	})
 }
 
-// TestAcc_DynamicTable_issue2173 proves https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2173 issue.
+// TestAcc_DynamicTable_issue2173 proves https://github.com/henryupton/terraform-provider-snowflakier/issues/2173 issue.
 func TestAcc_DynamicTable_issue2173(t *testing.T) {
 	dynamicTableId := testClient().Ids.RandomSchemaObjectIdentifier()
 	dynamicTableName := dynamicTableId.Name()
@@ -241,7 +241,7 @@ func TestAcc_DynamicTable_issue2173(t *testing.T) {
 	})
 }
 
-// TestAcc_DynamicTable_issue2134 proves https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2134 issue.
+// TestAcc_DynamicTable_issue2134 proves https://github.com/henryupton/terraform-provider-snowflakier/issues/2134 issue.
 func TestAcc_DynamicTable_issue2134(t *testing.T) {
 	dynamicTableId := testClient().Ids.RandomSchemaObjectIdentifier()
 	dynamicTableName := dynamicTableId.Name()
@@ -306,7 +306,7 @@ func TestAcc_DynamicTable_issue2134(t *testing.T) {
 	})
 }
 
-// TestAcc_DynamicTable_issue2276 proves https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2276 issue.
+// TestAcc_DynamicTable_issue2276 proves https://github.com/henryupton/terraform-provider-snowflakier/issues/2276 issue.
 func TestAcc_DynamicTable_issue2276(t *testing.T) {
 	dynamicTableId := testClient().Ids.RandomSchemaObjectIdentifier()
 	dynamicTableName := dynamicTableId.Name()
@@ -357,7 +357,7 @@ func TestAcc_DynamicTable_issue2276(t *testing.T) {
 	})
 }
 
-// TestAcc_DynamicTable_issue2329 proves https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2329 issue.
+// TestAcc_DynamicTable_issue2329 proves https://github.com/henryupton/terraform-provider-snowflakier/issues/2329 issue.
 func TestAcc_DynamicTable_issue2329(t *testing.T) {
 	dynamicTableId := testClient().Ids.RandomSchemaObjectIdentifierContaining("AS")
 	dynamicTableName := dynamicTableId.Name()
@@ -406,7 +406,7 @@ func TestAcc_DynamicTable_issue2329(t *testing.T) {
 	})
 }
 
-// TestAcc_DynamicTable_issue2329_with_matching_comment proves https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2329 issue.
+// TestAcc_DynamicTable_issue2329_with_matching_comment proves https://github.com/henryupton/terraform-provider-snowflakier/issues/2329 issue.
 func TestAcc_DynamicTable_issue2329_with_matching_comment(t *testing.T) {
 	dynamicTableId := testClient().Ids.RandomSchemaObjectIdentifierContaining("AS")
 	dynamicTableName := dynamicTableId.Name()

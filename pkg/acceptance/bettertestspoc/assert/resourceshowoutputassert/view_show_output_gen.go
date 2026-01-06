@@ -5,7 +5,7 @@ package resourceshowoutputassert
 import (
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert"
 )
 
 type ViewShowOutputAssert struct {

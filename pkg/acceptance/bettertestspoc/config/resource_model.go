@@ -3,7 +3,7 @@ package config
 import (
 	"fmt"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider/resources"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/provider/resources"
 )
 
 // TODO [SNOW-1501905]: add possibility to have reference to another object (e.g. WithResourceMonitorReference); new config.Variable impl?

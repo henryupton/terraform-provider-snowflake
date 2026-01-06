@@ -3,7 +3,7 @@
 package testacc
 
 import (
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/provider"
 	"github.com/hashicorp/terraform-plugin-framework/provider/schema"
 	"github.com/hashicorp/terraform-plugin-framework/types"
 )

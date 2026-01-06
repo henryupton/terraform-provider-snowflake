@@ -1,9 +1,9 @@
 package defs
 
 import (
-	g "github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk/generator/gen"
+	g "github.com/henryupton/terraform-provider-snowflakier/pkg/sdk/generator/gen"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk/generator/gen/sdkcommons"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk/generator/gen/sdkcommons"
 )
 
 var StorageLocationDef = g.NewQueryStruct("StorageLocation").Text("Path", g.KeywordOptions().SingleQuotes().Required())

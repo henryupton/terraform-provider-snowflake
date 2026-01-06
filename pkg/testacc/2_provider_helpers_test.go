@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/snowflakeenvs"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/snowflakeenvs"
 	"github.com/hashicorp/terraform-plugin-testing/config"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/stretchr/testify/require"

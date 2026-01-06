@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 	"github.com/snowflakedb/gosnowflake"
 	"github.com/stretchr/testify/require"
 )

@@ -5,8 +5,8 @@ import (
 	"database/sql"
 	"time"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/internal/tracking"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk/datatypes"
+	"github.com/henryupton/terraform-provider-snowflakier/internal/tracking"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk/datatypes"
 )
 
 type DynamicTables interface {

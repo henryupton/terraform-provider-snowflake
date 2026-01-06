@@ -5,7 +5,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 )
 
 // This file's only purpose is to make generated objects compile (or close to compile).

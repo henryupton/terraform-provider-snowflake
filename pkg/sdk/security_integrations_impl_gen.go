@@ -6,7 +6,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/collections"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/collections"
 )
 
 var _ SecurityIntegrations = (*securityIntegrations)(nil)

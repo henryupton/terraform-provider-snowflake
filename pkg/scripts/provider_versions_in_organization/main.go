@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/scripts/common"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/scripts/common"
 )
 
 const (

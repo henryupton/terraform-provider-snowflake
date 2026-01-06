@@ -5,10 +5,10 @@ package main
 import (
 	"strings"
 
-	objectassertgen "github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert/objectassert/gen"
+	objectassertgen "github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert/objectassert/gen"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert/resourceshowoutputassert/gen"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/genhelpers"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert/resourceshowoutputassert/gen"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/genhelpers"
 )
 
 const (
@@ -20,8 +20,8 @@ func main() {
 	genhelpers.NewGenerator(
 		genhelpers.NewPreambleModel(name, version).
 			WithImport("testing").
-			WithImport("github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert").
-			WithImport("github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"),
+			WithImport("github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert").
+			WithImport("github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"),
 		objectassertgen.GetSdkObjectDetails,
 		gen.ModelFromSdkObjectDetails,
 		getFilename,

@@ -1,6 +1,6 @@
 package resourceassert
 
-import "github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+import "github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 
 func (c *CurrentAccountResourceAssert) HasAllDefaultParameters() *CurrentAccountResourceAssert {
 	return c.

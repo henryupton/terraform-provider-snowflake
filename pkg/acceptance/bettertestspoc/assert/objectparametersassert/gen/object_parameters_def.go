@@ -1,8 +1,8 @@
 package gen
 
 import (
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/testenvidentifiers"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/testenvidentifiers"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 )
 
 type SnowflakeObjectParameters struct {

@@ -3,10 +3,10 @@ package testfunctional_test
 import (
 	"context"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/testfunctional"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/testfunctional/common"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/testfunctional/computednestedlist"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/testfunctional/httpserver"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/testfunctional"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/testfunctional/common"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/testfunctional/computednestedlist"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/testfunctional/httpserver"
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
 	"github.com/hashicorp/terraform-plugin-framework/provider"
 	"github.com/hashicorp/terraform-plugin-framework/provider/schema"

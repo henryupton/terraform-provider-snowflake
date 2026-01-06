@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/testenvs"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/testenvs"
 )
 
 func ObjectSuffix() string {

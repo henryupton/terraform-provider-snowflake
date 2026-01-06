@@ -6,9 +6,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/helpers/random"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/testfiles"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/oswrapper"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/helpers/random"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/testfiles"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/oswrapper"
 	"github.com/stretchr/testify/require"
 )
 

@@ -3,7 +3,7 @@ package sdk
 import (
 	"reflect"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk/datatypes"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk/datatypes"
 )
 
 func IsValidDataType(v string) bool {

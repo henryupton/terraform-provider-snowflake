@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/provider"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/provider"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
 	"github.com/hashicorp/terraform-plugin-testing/tfversion"
@@ -84,8 +84,8 @@ resource "snowflake_table_constraint" "fk" {
 `, id.DatabaseName(), id.SchemaName(), id.Name())
 }
 
-// proves issue https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2674
-// It is connected with https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2629.
+// proves issue https://github.com/henryupton/terraform-provider-snowflakier/issues/2674
+// It is connected with https://github.com/henryupton/terraform-provider-snowflakier/issues/2629.
 // Provider defaults will be reworked during resources redesign.
 func TestAcc_TableConstraint_pk(t *testing.T) {
 	tableId := testClient().Ids.RandomSchemaObjectIdentifier()
@@ -216,7 +216,7 @@ resource "snowflake_table_constraint" "unique" {
 `, tableId.DatabaseName(), tableId.SchemaName(), tableId.Name())
 }
 
-// proves issue https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2535
+// proves issue https://github.com/henryupton/terraform-provider-snowflakier/issues/2535
 func TestAcc_Table_issue2535_newConstraint(t *testing.T) {
 	id := testClient().Ids.RandomSchemaObjectIdentifier()
 
@@ -256,7 +256,7 @@ func TestAcc_Table_issue2535_newConstraint(t *testing.T) {
 	})
 }
 
-// proves issue https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2535
+// proves issue https://github.com/henryupton/terraform-provider-snowflakier/issues/2535
 func TestAcc_Table_issue2535_existingTable(t *testing.T) {
 	id := testClient().Ids.RandomSchemaObjectIdentifier()
 

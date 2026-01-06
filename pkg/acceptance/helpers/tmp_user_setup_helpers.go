@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/helpers/random"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/snowflakeroles"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/helpers/random"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/snowflakeroles"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 )
 
 // TODO [SNOW-1827324]: add TestClient ref to each specific client, so that we enhance specific client and not the base one

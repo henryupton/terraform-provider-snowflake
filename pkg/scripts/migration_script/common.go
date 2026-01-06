@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 )
 
 // csvUnescape reverses the CSV escaping done by the Terraform HCL generator.

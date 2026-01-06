@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 )
 
 type WarehousesPoc interface {

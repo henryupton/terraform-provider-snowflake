@@ -3,7 +3,7 @@ package config
 import (
 	"fmt"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider/datasources"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/provider/datasources"
 )
 
 // DatasourceModel is the base interface all of our datasource config models will implement.

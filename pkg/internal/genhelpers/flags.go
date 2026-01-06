@@ -5,7 +5,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/collections"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/collections"
 )
 
 type filtersFlag struct {

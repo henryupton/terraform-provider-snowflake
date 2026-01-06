@@ -6,7 +6,7 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk/datatypes"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk/datatypes"
 )
 
 type Functions interface {

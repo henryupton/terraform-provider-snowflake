@@ -3,10 +3,10 @@ package resourceassert
 import (
 	"strconv"
 
-	r "github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/resources"
+	r "github.com/henryupton/terraform-provider-snowflakier/pkg/resources"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert"
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 )
 
 func (u *UserResourceAssert) HasDisabled(expected bool) *UserResourceAssert {

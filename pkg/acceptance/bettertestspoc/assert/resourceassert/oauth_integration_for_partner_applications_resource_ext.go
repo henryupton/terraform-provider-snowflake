@@ -1,7 +1,7 @@
 package resourceassert
 
 import (
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/acceptance/bettertestspoc/assert"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/acceptance/bettertestspoc/assert"
 )
 
 func (o *OauthIntegrationForPartnerApplicationsResourceAssert) HasRelatedParametersNotEmpty() *OauthIntegrationForPartnerApplicationsResourceAssert {

@@ -3,7 +3,7 @@ package helpers
 import (
 	"context"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/sdk"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/sdk"
 )
 
 func (c *TestClient) CreateTestDatabase(ctx context.Context, ifNotExists bool) (*sdk.Database, func(), error) {

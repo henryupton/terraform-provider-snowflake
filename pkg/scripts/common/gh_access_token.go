@@ -3,7 +3,7 @@ package common
 import (
 	"errors"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/internal/oswrapper"
+	"github.com/henryupton/terraform-provider-snowflakier/pkg/internal/oswrapper"
 )
 
 func GetAccessToken() string {

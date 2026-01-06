@@ -5,8 +5,8 @@ import (
 	"flag"
 	"log"
 
-	"github.com/Snowflake-Labs/terraform-provider-snowflake/internal/tracking"
-	oldprovider "github.com/Snowflake-Labs/terraform-provider-snowflake/pkg/provider"
+	"github.com/henryupton/terraform-provider-snowflakier/internal/tracking"
+	oldprovider "github.com/henryupton/terraform-provider-snowflakier/pkg/provider"
 
 	"github.com/hashicorp/terraform-plugin-go/tfprotov6"
 	"github.com/hashicorp/terraform-plugin-go/tfprotov6/tf6server"
@@ -55,7 +55,7 @@ func main() {
 	}
 
 	err = tf6server.Serve(
-		"registry.terraform.io/snowflakedb/snowflake",
+		"registry.terraform.io/henryupton/snowflakier",
 		muxServer.ProviderServer,
 		serveOpts...,
 	)
